@@ -24,7 +24,6 @@ public class RestControllerApi {
 
     @GetMapping("/test/cache")
     public TestCacheService.Response probarCache() {
-        TestCacheService.Response response = testCacheService.testCache();
-        return response;
+        return testCacheService.testCache();
     }
 }
